@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — Page Not Found | Soubhanik Patra</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X2YZ4Z5LP5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X2YZ4Z5LP5');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:        #0d0f14;
+  --bg-card:   #131720;
+  --purple:    #7c3aed;
+  --purple-lt: #a78bfa;
+  --purple-bg: rgba(124,58,237,0.12);
+  --purple-bd: rgba(124,58,237,0.32);
+  --text-1:    #f1f5f9;
+  --text-2:    #94a3b8;
+  --text-3:    #4a5568;
+  --border:    rgba(255,255,255,0.07);
+  --mono:      'JetBrains Mono', monospace;
+  --sans:      'Inter', system-ui, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.bg-dots {
+  position: fixed; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle at 1.5px 1.5px, rgba(124,58,237,0.15) 1.5px, transparent 0);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 10%, transparent 100%);
+}
+.glow {
+  position: fixed; pointer-events: none;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%);
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.inner { position: relative; z-index: 1; max-width: 480px; }
+.logo {
+  display: inline-flex; align-items: center;
+  text-decoration: none; color: var(--text-1);
+  margin-bottom: 3rem;
+}
+.logo:hover svg text { fill: var(--purple-lt); transition: fill 0.2s; }
+.code {
+  font-size: clamp(80px, 16vw, 120px);
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--purple-lt);
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+}
+h1 {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 600;
+  color: var(--text-1);
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+p {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+}
+.actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn-solid {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 14px; font-weight: 500;
+  background: var(--purple); color: #fff;
+  border: none; padding: 11px 22px; border-radius: 8px;
+  cursor: pointer; text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-solid:hover { background: #6d28d9; transform: translateY(-2px); }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 14px; font-weight: 500;
+  background: transparent; color: var(--purple-lt);
+  border: 1px solid var(--purple-bd); padding: 11px 22px; border-radius: 8px;
+  cursor: pointer; text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+.btn-ghost:hover { background: var(--purple-bg); border-color: var(--purple); transform: translateY(-2px); }
+.footer-note {
+  position: fixed; bottom: 20px;
+  font-size: 11px; font-family: var(--mono); color: var(--text-3);
+}
+</style>
+</head>
+<body>
+<div class="bg-dots" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="inner">
+  <a href="/" class="logo" aria-label="Soubhanik Patra — home">
+    <svg width="52" height="32" viewBox="0 0 52 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="0" y="24" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="700" fill="currentColor">S</text>
+      <line x1="19" y1="28" x2="25" y2="3" stroke="#7c3aed" stroke-width="2.6" stroke-linecap="round"/>
+      <line x1="24" y1="28" x2="30" y2="3" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+      <text x="35" y="24" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="700" fill="currentColor">P</text>
+    </svg>
+  </a>
+
+  <div class="code">404</div>
+  <h1>Page not found</h1>
+  <p>This page doesn't exist or was moved.<br/>Head back to see my work.</p>
+
+  <div class="actions">
+    <a href="/" class="btn-solid">← Back to home</a>
+    <a href="/#contact" class="btn-ghost">Get in touch</a>
+  </div>
+</div>
+
+<p class="footer-note">&copy; 2026 Soubhanik Patra</p>
+</body>
+</html>
